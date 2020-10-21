@@ -9,8 +9,8 @@ izveletaisVards='';
 ciparuSkaits=document.getElementById("cipSkaits").value;
 variantuSkaits=document.getElementById("varSkaits").value;
 izveletaisVards=document.getElementById("ieklVards").value;
-//let rindas=document.querySelector('.rindas');
-//rindas.innerHTML = 'helo';
+let rindas=document.querySelector('.rindas');
+//rindas.innerHTML = '';
 for(i=0;i<variantuSkaits;i=++){
 vardaIndeks1=Math.random()*5;
 vardaIndeks1=Math.floor(vardaIndeks1);
@@ -38,8 +38,11 @@ if(ciparuSkaits>0){
     parole = parole.replace('e','E');
 }
 
-console.log(parole);
-
+//console.log(parole);
+rindas.innerHTML += `
+<tr>
+<td>parole</td>
+</tr>`;
 }
 
     
