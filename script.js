@@ -11,7 +11,7 @@ variantuSkaits=document.getElementById("varSkaits").value;
 izveletaisVards=document.getElementById("ieklVards").value;
 let rindas=document.querySelector('.rindas');
 //rindas.innerHTML = '';
-for(i=0;i<variantuSkaits;i=++){
+for(i=0;i<variantuSkaits;i++){
 vardaIndeks1=Math.random()*5;
 vardaIndeks1=Math.floor(vardaIndeks1);
 vardaIndeks2=Math.random()*5;
@@ -26,7 +26,7 @@ else{
 }
 
 if(ciparuSkaits>0){
-    for(j=0;j<ciparuSkaits;j=++){
+    for(j=0;j<ciparuSkaits;j++){
         cipars1=Math.random()*10;
         cipars1=Math.floor(cipars1);
         parole=parole+cipars1;
@@ -41,7 +41,8 @@ if(ciparuSkaits>0){
 //console.log(parole);
 rindas.innerHTML += `
 <tr>
-<td>parole</td>
+<td>${i}</td>
+<td>${parole}</td>
 </tr>`;
 }
 
