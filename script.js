@@ -18,7 +18,7 @@ vardaIndeks2=Math.random()*5;
 vardaIndeks2=Math.floor(vardaIndeks2);
 vardaIndeks3=Math.random()*5;
 vardaIndeks3=Math.floor(vardaIndeks3);
-if(izveletaisVards!==null){    
+if(izveletaisVards!==''){    
     parole=vardi1[vardaIndeks1]+izveletaisVards+vardi3[vardaIndeks3] ;
 }
 else{    
@@ -31,17 +31,16 @@ if(ciparuSkaits>0){
         cipars1=Math.floor(cipars1);
         parole=parole+cipars1;
     }
-    if(Math.random()*10>5){
+    if((Math.random()*10)>5){
         parole = parole.replace('e','E');
         parole = parole.replace('i','1'); 
-    }
-    parole = parole.replace('e','E');
+    }    
 }
 
 //console.log(parole);
 rindas.innerHTML += `
 <tr>
-<td>${i}</td>
+<td>${i+1}</td>
 <td>${parole}</td>
 </tr>`;
 }
